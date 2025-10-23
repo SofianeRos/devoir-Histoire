@@ -14,3 +14,77 @@
 }
 
 /* ---------- VOTRE CSS ICI ---------- */
+
+body {
+    background-image: url('./assets/images/background.webp');
+    background-size: cover;
+    background-position: center;
+    font-family: 'comic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+}
+
+.histoire-etape {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.histoire-texte {
+    background-color: #FADADD;
+    border: 2px solid #F47C7C;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.histoire-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.reponses-liste {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Pour les écrans plus larges, on met les boutons côte à côte */
+@media (min-width: 768px) {
+    .reponses-liste {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.reponses-liste button {
+    font-family: 'comic', sans-serif;
+    background-color: #F47C7C;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 100%;
+    /* Pour que les boutons aient la même hauteur */
+}
+
+.reponses-liste button:hover {
+    background-color: #E86A6A;
+}
